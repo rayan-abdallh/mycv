@@ -123,7 +123,25 @@ pre {
   padding: 40px;
   z-index: 100;
   justify-self: flex-end;
-  animation: slideInFromRight 0.5s ease-out;
+  background-image: url(./template.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: imgframe;
+  animation-duration: 12.6s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  transition: 0.7s;
+}
+
+@keyframes imgframe {
+
+   25%{
+       background-image: url(./images.png);
+   }
+   35%{
+    background-image: url(./pexels-marcio-nascimento-3579181.jpg);
+   }
+  
 }
 
 .showcase-form .form-control {
